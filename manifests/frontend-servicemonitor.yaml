@@ -7,7 +7,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name: frontend
+      name: prometheus-example-app
   endpoints:
     - port: http
       path: /metrics
