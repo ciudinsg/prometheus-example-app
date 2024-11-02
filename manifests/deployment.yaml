@@ -28,7 +28,7 @@ metadata:
   labels:
     name: prometheus-example-app
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     name: prometheus-example-app
   ports:
