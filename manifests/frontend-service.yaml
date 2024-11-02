@@ -6,7 +6,7 @@ metadata:
   labels:
     name: prometheus-example-app
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     matchLabels:
      name: prometheus-example-app
