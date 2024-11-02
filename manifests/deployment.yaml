@@ -26,11 +26,11 @@ kind: Service
 metadata:
   name: frontend
   labels:
-    app: frontend
+    app.kubernetes.io/name: prometheus-example-app
 spec:
   type: LoadBalancer
   selector:
-    app: frontend
+    app.kubernetes.io/name: prometheus-example-app
   ports:
   - name: http
     port: 80
