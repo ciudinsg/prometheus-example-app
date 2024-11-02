@@ -20,3 +20,22 @@ spec:
         ports:
         - name: web
           containerPort: 8080
+
+---
+
+apiVersion: v1
+kind: apps/v1
+metadata:
+  name: frontend
+  labels:
+    name: prometheus-example-app
+spec:
+  type: ClusterIP
+  selector:
+    matchLabels:
+      name: prometheus-example-app
+  ports:
+  - name: http
+    port: 80
+    targetPort: 8080
+ targetPort: 8080
