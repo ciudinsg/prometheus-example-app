@@ -20,5 +20,3 @@ spec:
         ports:
         - name: web
           containerPort: 8080
-
-Failed to create resource: Deployment.apps "prometheus-example-app" is invalid: spec.template.metadata.labels: Invalid value: map[string]string{"app":"prometheus-example-app"}: `selector` does not match template `labels` 
