@@ -20,11 +20,9 @@ spec:
         ports:
         - name: web
           containerPort: 8080
-
 ---
-
-apiVersion: v1
-kind: apps/v1
+apiVersion: apps/v1
+kind: Service
 metadata:
   name: frontend
   labels:
@@ -38,4 +36,3 @@ spec:
   - name: http
     port: 80
     targetPort: 8080
- 
